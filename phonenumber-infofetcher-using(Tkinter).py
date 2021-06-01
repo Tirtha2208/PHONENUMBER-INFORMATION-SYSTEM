@@ -11,6 +11,10 @@ root.geometry("800x600")
 
 def phonefetch():
     pt=e1.get()
+    e2.delete(0,'end')
+    e3.delete(0,'end')
+    e4.delete(0,'end')
+    e5.delete(0,'end')
     phone_number = phonenumbers.parse(pt)
     e2.insert(0, pt)
     op=car.name_for_number(phone_number, 'en')
